@@ -1,0 +1,110 @@
+main {
+  display: flex;
+  gap: 10px;
+}
+/* 1-left section */
+main section.left-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+main section.left-sec button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem;
+  text-align: center;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 1rem;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+main section.left-sec button:active {
+  border: 1px solid rgb(17, 17, 63);
+  opacity: 1;
+  transition: 0.5;
+}
+main section.left-sec button:hover {
+  opacity: 0.8;
+}
+main section.left-sec button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem;
+}
+
+/*2-right seection */
+main section.right-sec {
+  display: flex;
+  column-gap: 6px;
+  row-gap: 2rem;
+  margin: 2.5px;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.3s;
+}
+main section.right-sec article {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  transition: 0.5s;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgba(128, 128, 128, 0.329),
+    var(--background-color)
+  );
+  padding: 1px;
+}
+section.right-sec article.card a img {
+  border-radius: 5px;
+}
+main section.right-sec article:hover {
+  border: 1px solid var(--blue);
+  rotate: -1deg;
+  transition: 0.5s;
+  scale: 1.1;
+}
+main section.right-sec article.card {
+  border-radius: 10px;
+}
+main section.right-sec article.card div.box {
+  padding: 1rem 0.4rem;
+}
+main section.right-sec article.card div.box h3 {
+  color: var(--tittle);
+}
+main section.right-sec article.card div.box p {
+  color: var(--subtittle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+main section.right-sec article.card div.box div.icon {
+  display: flex;
+  justify-content: space-between;
+}
+main section.right-sec article.card div.box div.icon div {
+  display: flex;
+  gap: 10px;
+  color: var(--subtittle);
+  font-size: 1.2rem;
+}
+main section.right-sec article.card div.box div.icon div span:hover {
+  color: var(--icon-hover);
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+main section.right-sec article.card div.box div.icon a {
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
+  font-size: 0.9rem;
+  display: flex;
+  margin-right: 12px;
+}
+main section.right-sec article.card div.box div.icon a span.icon-arrow-right {
+  align-self: center;
+}

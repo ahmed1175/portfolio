@@ -1,0 +1,185 @@
+/*head sec of the contact area
+_______________________________________________________________
+*/
+div.contact div.header div {
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  color: var(--tittle);
+}
+div.contact div.header p {
+  color: var(--subtittle);
+  margin: 15px;
+  font-size: 14px;
+  line-height: 1, 65rem;
+}
+
+/*left  sec of the contact area
+_______________________________________________________________
+*/
+div.contact form.left-sec div.boxs {
+  padding: 2rem 0;
+  margin: 1rem 0;
+  width: 60%;
+}
+
+/* box 1 style 
+__________________________________________________________________________
+*/
+div.contact form.left-sec {
+  display: flex;
+  justify-content: space-between;
+}
+div.contact form.left-sec div.box1 {
+  font-size: 1rem;
+  margin: 15px;
+  background-color: var(--background-color);
+  color: var(--subtittle);
+}
+div.contact form.left-sec div.box1 input {
+  background-color: var(--bgheader);
+  padding: 4px;
+  margin-left: 23px;
+  border-radius: 5px;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid var(--border);
+  outline: none;
+  color: var(--icon-hover);
+}
+div.contact form.left-sec div.box1 input:active {
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  outline: none;
+}
+div.contact form.left-sec div.box1 input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  outline: none;
+}
+div.contact form.left-sec div.box1 input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  outline: none;
+  transition: 0.2s;
+}
+/* box 2 style 
+_____________________________________________________________________
+*/
+div.contact form.left-sec div.box2 {
+  color: var(--background-color);
+  color: var(--subtittle);
+  margin: 15px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+div.contact form.left-sec div.box2 textarea {
+  background-color: var(--bgheader);
+  margin-top: 10px;
+  width: 15rem;
+  height: 10rem;
+  outline: none;
+  color: var(--icon-hover);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 5px;
+  padding: 10px;
+  line-height: 4px;
+}
+.light div.contact form.left-sec div.box2 textarea,.light div.contact form.left-sec div.box1 input{
+  background-color: #eeeded;
+}
+div.contact form.left-sec div.box2 textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  outline: none;
+}
+div.contact form.left-sec div.box2 textarea:hover {
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  outline: none;
+  transition: 0.2s;
+}
+
+div.contact form.left-sec div.box2 label {
+  margin: 5px;
+
+  gap: 10px;
+}
+/*
+button style 
+*/
+div.contact button {
+  background-color: var(--bgheader);
+  padding: 8px;
+  margin: 15px;
+  color: var(--tittle);
+  width: 7rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+div.contact button:active {
+  font-size: 1.05rem;
+  transition: 0.2s;
+}
+/*right  sec of the contact area
+_______________________________________________________________
+*/
+form.left-sec .right-sec{
+  margin-top: -9rem;
+  margin-right: -7rem;
+  
+  
+}
+/*
+in small size
+_______________________________________________________________
+*/
+@media (max-width: 700px) {
+  div.contact form.left-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  form{
+    width: 100%;
+  }
+  div.contact form.left-sec div.boxs div.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  div.contact form.left-sec div.boxs div.box1 input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+  }
+  div.contact form.left-sec div.boxs div.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  div.contact form.left-sec button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 4.1rem;
+    width: 8rem;
+  }
+  div.contact form.left-sec div.right-sec {
+    display: none;
+    
+  }
+}
+}

@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 2.4rem;
+  margin-top: 1rem;
+  
+}
+.nav-text {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--blue);
+  border-radius: 20px;
+  gap: 16px;
+  background-color: var(--bgheader);
+  opacity: 0.9;
+  box-shadow: 1px 1px 20px rgb(63, 63, 63);
+  padding: 3px;
+  position: relative;
+}
+.icon-sun{
+  color: rgb(255, 166, 0);
+  font-size: large;
+
+
+}
+.nav-item {
+  padding: 5px;
+  margin: 5px;
+  color: var(--tittle);
+  font-weight: 500;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+header ul li a{
+  color: var(--tittle);
+}
+.light-button {
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+header button.menu {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--border);
+  color: var(--tittle);
+}
+header div.module-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(116, 113, 113, 0.651);
+  backdrop-filter: blur(4px);
+}
+@keyframes animation {
+  0%   {scale: 0;}
+  60% {scale: 1.4;}
+  100% {scale: 1;}
+} 
+
+
+header div ul.module {
+  animation: animation 0.5s 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+header div ul.module li {
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+}
+header div ul.module li:last-child {
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border-bottom: none;
+}
+header div ul.module li:first-child {
+  display: flex;
+  padding: 0.2rem 0;
+  margin: 6px;
+  font-weight: 500;
+  border-bottom: none;
+  justify-content: flex-end;
+
+  
+}
+.light-button{
+  background-color: var(--background-color);
+  color: var(--subtittle);
+  border: 1px solid rgb(80, 75, 74);
+  border-radius: 15px;
+  box-shadow: 1px 2px 1px rgb(73, 73, 73);
+}
+.light-button:hover{
+  color: var(--tittle);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+header div ul.module li a {
+  font-size: 1rem;
+  
+}
+header div ul.module li button {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  background-color: var(--background-color);
+  color: #fff;
+  border-radius: 5px;
+  border: 1 solid salmon;
+
+}
+.light-mode{
+  position: fixed;
+
+}
+
+@media (max-width: 700px) {
+  .nav-text {
+    display: none;
+  }
+  header button.menu {
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--bgheader);
+  }
+  .light-button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: var(--subtittle);
+    box-shadow: 1px 2px 1px rgb(73, 73, 73);
+  }
+  .light-button:hover {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+}

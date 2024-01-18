@@ -1,0 +1,55 @@
+section.hero{
+display: flex;
+margin-top: 3rem;
+}
+section.hero div.left-section{
+  flex-grow: 1;
+  padding-left:2rem;
+  margin-left: auto;
+  margin-left: auto;
+}
+section.hero div.left-section img.img-sec{
+  width: 8rem;
+border-radius: 50%;
+
+  margin: 0;
+  border: 1px solid var(--subtittle);
+  box-shadow: 2px 1px 30px gray;
+}
+section.hero div.left-section p{
+  width: 50%;
+padding: 5px;
+margin: 5px;
+color: var(--subtittle);
+line-height: 2rem;
+}
+section.hero div.left-section span.icon-verified{
+  color: var(--blue);
+  margin-top: -5px;
+  padding-top: -5px;
+}
+
+section.hero div.left-section h1{
+  font-size: 40px;
+  padding: 5px;
+  margin: 5px;
+  line-height: 3rem;
+  color: var(--tittle);
+}
+section.hero div.left-section section.icon-section{
+display: flex;
+padding: 5px;
+margin: 5px;
+gap: 15px;
+cursor: pointer;
+color: var(--subtittle);
+}
+section.hero div.left-section section.icon-section span:hover{
+  color: var(--icon-hover);
+}
+section div.right-section{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 65%;
+}
